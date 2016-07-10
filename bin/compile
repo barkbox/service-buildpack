@@ -1,4 +1,10 @@
-#! /bin/bash
+#!/bin/bash
 
-echo "-----> ENV_DIR:"
-echo $3
+ENV_DIR=$3
+
+if [ -f "$3/BARKCA_PEM" ];
+then
+   echo "File $3/BARKCA_PEM exists."
+else
+   echo "File $3/BARKCA_PEM does not exist."
+fi
