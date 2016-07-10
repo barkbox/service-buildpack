@@ -5,8 +5,8 @@ ENV_DIR=$3
 
 if [ -f "$3/BARK_CA_PEM" ];
 then
-  cp "$3/BARK_CA_PEM" "$1/barkCA.pem"
-  echo "File $3/BARK_CA_PEM exists."
+  cp "$3/BARK_CA_PEM" "$1/config/barkCA.pem"
+  echo "barkCA.pem file has been installed"
 else
-  echo "File $3/BARK_CA_PEM does not exist."
+  echo "barkCA.pem file could not be installed"
 fi

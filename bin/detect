@@ -1,11 +1,10 @@
 #! /bin/bash
 
-# This pack is valid for apps with the bark-service gem installed
-# if [[ -n $(bundle show | grep bark-service) ]]; then
-#   exit 0
-# else
-#   exit 1
-# fi
+# This pack is valid for apps using the bark-service gem
+if [ -n "$BARK_CA_PEM" ]; then
+  echo "The BARK_CA_PEM environment variable is not set."
+  exit 0
+else
+  exit 1
+fi
 
-echo "-----> DETECT $1"
-exit 0
