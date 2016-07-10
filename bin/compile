@@ -2,9 +2,9 @@
 
 ENV_DIR=$3
 
-if [ -f "$3/BARKCA_PEM" ];
+if [ -f "$3/BARK_CA_PEM" ];
 then
-   echo "File $3/BARKCA_PEM exists."
+   echo "File $3/BARK_CA_PEM exists."
 else
-   echo "File $3/BARKCA_PEM does not exist."
+   echo "File $3/BARK_CA_PEM does not exist."
 fi
