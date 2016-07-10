@@ -1,10 +1,12 @@
 #!/bin/bash
 
+BUILD_DIR=$1
 ENV_DIR=$3
 
 if [ -f "$3/BARK_CA_PEM" ];
 then
-   echo "File $3/BARK_CA_PEM exists."
+  cp "$3/BARK_CA_PEM" "$1/barkCA.pem"
+  echo "File $3/BARK_CA_PEM exists."
 else
-   echo "File $3/BARK_CA_PEM does not exist."
+  echo "File $3/BARK_CA_PEM does not exist."
 fi
