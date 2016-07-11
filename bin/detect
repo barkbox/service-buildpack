@@ -1,5 +1,4 @@
 #! /bin/bash
 
 # This pack is meant for apps using the bark-service gem
-echo "DETECT DETECT DETECT"
 exit 0
