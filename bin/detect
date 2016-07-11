@@ -1,4 +1,1 @@
 #! /bin/bash
-
-# This pack is meant for apps using the bark-service gem
-exit 0
