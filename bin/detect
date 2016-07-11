@@ -1,2 +1,3 @@
 #! /bin/bash
+echo "Installing barkCA.pem"
 exit 0
