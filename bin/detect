@@ -1,10 +1,12 @@
 #! /bin/bash
 
-# This pack is valid for apps using the bark-service gem
+# This pack is meant for apps using the bark-service gem
 if [ -n "$BARK_CA_PEM" ]; then
-  echo "The BARK_CA_PEM environment variable is not set."
+  echo "The BARK_CA_PEM environment variable is set."
   exit 0
 else
+  echo "The BARK_CA_PEM environment variable is not set."
   exit 1
 fi
+
 
