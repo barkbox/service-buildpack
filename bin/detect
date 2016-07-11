@@ -1,14 +1,5 @@
 #! /bin/bash
 
 # This pack is meant for apps using the bark-service gem
+echo "DETECT DETECT DETECT"
 exit 0
-
-# if [ -n "$BARK_CA_PEM" ]; then
-#   echo "The BARK_CA_PEM environment variable is set."
-#   exit 0
-# else
-#   echo "The BARK_CA_PEM environment variable is not set."
-#   exit 1
-# fi
-
-
