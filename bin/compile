@@ -3,14 +3,14 @@
 BUILD_DIR=$1
 ENV_DIR=$3
 
-indent() {
-  sed -u 's/^/       /'
-}
+# indent() {
+#   sed -u 's/^/       /'
+# }
 
 if [ -f "$3/BARK_CA_PEM" ];
 then
   cp "$3/BARK_CA_PEM" "$1/config/barkCA.pem"
-  echo "barkCA.pem file has been installed" | indent
+  echo "barkCA.pem file has been installed"
 else
-  echo "barkCA.pem file could not be installed" | indent
+  echo "barkCA.pem file could not be installed"
 fi
